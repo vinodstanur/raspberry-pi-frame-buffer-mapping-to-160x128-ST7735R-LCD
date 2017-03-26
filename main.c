@@ -9,8 +9,10 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <arpa/inet.h>
 #include "spi.h"
 #include "gpio.h"
+#include <endian.h>
 
 int main()
 {
@@ -19,7 +21,7 @@ int main()
 	struct fb_var_screeninfo vinfo;
 	struct fb_fix_screeninfo finfo;
 	long int screensize = 0;
-	char *fbp = 0;
+	uint8_t *fbp = 0;
 	int x = 0, y = 0;
 	long int location = 0;
 
@@ -76,24 +78,30 @@ int main()
 
 	A0_H();
 
-	uint8_t fb2[128 * 160 * 2];
+	uint16_t fb2[128 * 160];
 
 	int xx = 0;
-	while (1) {
 		CS_L();
 
 		ST7735_AddrSet(0, 0, 160, 128);
 
 		A0_H();
 
-		char *p = fb2;
-		char *x = fbp;
-		for (xx = 0; xx < 128; xx++) {
-			for (y = 0; y < 160; y++) {
-				*p++ = *(x + 1);
-				*p++ = *x;
-				x += 2;
-			}
+	while (1) {
+		//CS_L();
+
+		//ST7735_AddrSet(0, 0, 160, 128);
+
+		//A0_H();
+
+		uint16_t *p = fb2;
+		uint16_t *x = (uint16_t *)fbp;
+		for (xx = 0; xx < 128*160; xx++) {
+				 p[xx] = htons(x[xx]);
+				//*p++ = htons(*x++);
+				//*p = *x>>8|*x<<8;
+			//	p++;
+		//		x++;
 		}
 
 		p = fb2;
@@ -101,8 +109,8 @@ int main()
 		//memcpy(fb2, fbp, 128*160*2);   
 
 		for (i = 0; i < 10; i++) {
-			spi_write(0, p, 4096);
-			p += 4096;
+			spi_write(0, (char *)p, 4096);
+			p += 4096/2;
 		}
 		//      spi_write(0, p, 120*160*2 - 4096*9);
 
