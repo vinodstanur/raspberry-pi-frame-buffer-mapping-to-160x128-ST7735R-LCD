@@ -10,8 +10,8 @@ uint16_t scr_height;
 
 void ST7735_write(uint8_t data)
 {
-	spi_write(0, &data, 1);
-	//wiringPiSPIDataW(0, &data, 1) ;
+				spi_write(0, &data , 1);
+				//wiringPiSPIDataW(0, &data, 1) ;
 }
 
 void ST7735_cmd(uint8_t cmd)
@@ -34,30 +34,32 @@ uint16_t RGB565(uint8_t R, uint8_t G, uint8_t B)
 void ST7735_Init(void)
 {
 
-	//init spi
+  //init spi
 	printf("ST7735_Init...\n");
 	//wiringPiSetup ();
 	gpio_init();
 	spi_init(0, 10000000, 0);
 
-	gpio_mode_output(CS_PIN);
-	gpio_mode_output(A0_PIN);
-	gpio_mode_output(RST_PIN);
+gpio_mode_output(CS_PIN);
+gpio_mode_output(A0_PIN);
+gpio_mode_output(RST_PIN);
+
 
 	//toggle test for debugging
 	/*while(1) {
-	   CS_H();
-	   CS_L();
+		CS_H();
+		CS_L();
 
-	   A0_H();
-	   A0_L();
+	  A0_H();
+		A0_L();
 
-	   RST_H();
-	   RST_L();
+		RST_H();
+		RST_L();
 
-	   }
+	}
 
-	 */
+	
+*/
 	// Reset display
 	CS_H();
 	RST_H();
@@ -101,10 +103,10 @@ void ST7735_Init(void)
 	ST7735_data(0x05);	// 16-bit/pixel RGB 5-6-5 (65k colors)
 	//ST7735_data(0x06);    // 18-bit/pixel RGB 6-6-6 (256k colors)
 
-	ST7735_cmd(0x36);	// Memory data access control:
+	ST7735_cmd(0x36);     // Memory data access control:
 	// MY MX MV ML RGB MH - -
 	//ST7735_data(0x08 + 2+4);    // Normal: Top to Bottom; Left to Right; RGB
-	ST7735_data(0x8);	// Y-Mirror: Bottom to top; Left to Right; RGB
+	ST7735_data(0x8);    // Y-Mirror: Bottom to top; Left to Right; RGB
 	//ST7735_data(0x40);    // X-Mirror: Top to Bottom; Right to Left; RGB
 	//ST7735_data(0xc0);    // X-Mirror,Y-Mirror: Bottom to top; Right to left; RGB
 	//ST7735_data(0x20);    // X-Y Exchange: X and Y changed positions
@@ -118,7 +120,7 @@ void ST7735_Init(void)
 	ST7735_cmd(0x13);	// Partial mode off
 
 	ST7735_cmd(0x26);	// Gamma curve set:
-	ST7735_data(0x01);	// Gamma curve 1 (G2.2) or (G1.0)
+ 	ST7735_data(0x01);	// Gamma curve 1 (G2.2) or (G1.0)
 	//ST7735_data(0x02);    // Gamma curve 2 (G1.8) or (G2.5)
 	//ST7735_data(0x04);    // Gamma curve 3 (G2.5) or (G2.2)
 	//ST7735_data(0x08);    // Gamma curve 4 (G1.0) or (G1.8)
@@ -140,7 +142,7 @@ void ST7735_Orientation(uint8_t orientation)
 	case scr_CW:
 		scr_width = scr_h;
 		scr_height = scr_w;
-		ST7735_data(0xa0);	// X-Y Exchange,Y-Mirror
+  	ST7735_data(0xa0 );	// X-Y Exchange,Y-Mirror
 		break;
 	case scr_CCW:
 		scr_width = scr_h;
@@ -197,3 +199,4 @@ void ST7735_Clear(uint16_t color)
 	}
 	CS_H();
 }
+
