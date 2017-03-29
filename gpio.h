@@ -45,7 +45,7 @@
 
 
 
-void gpio_mode_output (int pin);
-void gpio_set_pin (int pin);
-void gpio_clear_pin (int pin);
+void gpio_mode_output (unsigned int pin);
+void gpio_set_pin (unsigned int pin);
+void gpio_clear_pin (unsigned int pin);
 void gpio_init(void);

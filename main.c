@@ -97,16 +97,11 @@ int main()
 		uint16_t *p = fb2;
 		uint16_t *x = (uint16_t *)fbp;
 		for (xx = 0; xx < 128*160; xx++) {
-				 p[xx] = htons(x[xx]);
-				//*p++ = htons(*x++);
-				//*p = *x>>8|*x<<8;
-			//	p++;
-		//		x++;
+				*p++ = htons(*x++);
 		}
 
 		p = fb2;
 
-		//memcpy(fb2, fbp, 128*160*2);   
 
 		for (i = 0; i < 10; i++) {
 			spi_write(0, (char *)p, 4096);

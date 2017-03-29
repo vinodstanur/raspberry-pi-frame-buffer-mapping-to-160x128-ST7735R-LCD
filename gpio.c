@@ -5,10 +5,11 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 volatile unsigned int *gpio = MAP_FAILED;
 
-void gpio_mode_output(int pin)
+void gpio_mode_output(unsigned pin)
 {
 	int x;
 
@@ -17,18 +18,18 @@ void gpio_mode_output(int pin)
 		p -= 10;
 	}
 
-	gpio[GPIO_GPFSEL0 + pin / 10] |= 1 << (p * 3);	//make as output
+	gpio[GPIO_GPFSEL0 + pin / 10] |= 1UL << (p * 3);	//make as output
 	//gpio[GPIO_GPFSEL0 + pin/10] &= ~( 1 << (p*3) ); //use this to make input. 
 }
 
-void gpio_set_pin(int pin)
+void gpio_set_pin(unsigned int pin)
 {
-	gpio[GPIO_GPSET0 + pin / 32] |= 1 << (pin - (pin / 32) * 32);
+	gpio[GPIO_GPSET0 + pin / 32] = (1UL << ((pin - (pin / 32) * 32)));
 }
 
-void gpio_clear_pin(int pin)
+void gpio_clear_pin(unsigned int pin)
 {
-	gpio[GPIO_GPCLR0 + pin / 32] |= 1 << (pin - (pin / 32) * 32);
+	gpio[GPIO_GPCLR0 + pin / 32] = (1UL << ((pin - (pin / 32) * 32)));
 }
 
 void gpio_init(void)

@@ -43,21 +43,25 @@ void ST7735_Init(void)
 	gpio_mode_output(CS_PIN);
 	gpio_mode_output(A0_PIN);
 	gpio_mode_output(RST_PIN);
+	gpio_mode_output(23);
+	gpio_mode_output(17);
 
 	//toggle test for debugging
 	/*while(1) {
-	   CS_H();
-	   CS_L();
+//	   CS_H();
+//	   CS_L();
 
-	   A0_H();
-	   A0_L();
+//	   A0_H();
+//	   A0_L();
 
 	   RST_H();
+		usleep(1000);
 	   RST_L();
+		usleep(1000);
 
 	   }
-
-	 */
+*/
+	 
 	// Reset display
 	CS_H();
 	RST_H();

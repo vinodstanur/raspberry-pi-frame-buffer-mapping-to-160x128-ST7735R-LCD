@@ -4,155 +4,15 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-A0_H	st7735.h	25;"	d
-A0_L	st7735.h	24;"	d
-A0_PIN	st7735.h	12;"	d
-COLOR565_ALICE_BLUE	color565.h	4;"	d
-COLOR565_ANTIQUE_WHITE	color565.h	5;"	d
-COLOR565_AQUA	color565.h	6;"	d
-COLOR565_AQUAMARINE	color565.h	7;"	d
-COLOR565_AZURE	color565.h	8;"	d
-COLOR565_BEIGE	color565.h	9;"	d
-COLOR565_BISQUE	color565.h	10;"	d
-COLOR565_BLACK	color565.h	11;"	d
-COLOR565_BLANCHED_ALMOND	color565.h	12;"	d
-COLOR565_BLUE	color565.h	13;"	d
-COLOR565_BLUE_VIOLET	color565.h	14;"	d
-COLOR565_BROWN	color565.h	15;"	d
-COLOR565_BURLY_WOOD	color565.h	16;"	d
-COLOR565_CADET_BLUE	color565.h	17;"	d
-COLOR565_CHARTREUSE	color565.h	18;"	d
-COLOR565_CHOCOLATE	color565.h	19;"	d
-COLOR565_CORAL	color565.h	20;"	d
-COLOR565_CORNFLOWER_BLUE	color565.h	21;"	d
-COLOR565_CORNSILK	color565.h	22;"	d
-COLOR565_CRIMSON	color565.h	23;"	d
-COLOR565_CYAN	color565.h	24;"	d
-COLOR565_DARK_BLUE	color565.h	25;"	d
-COLOR565_DARK_CYAN	color565.h	26;"	d
-COLOR565_DARK_GOLDEN_ROD	color565.h	27;"	d
-COLOR565_DARK_GRAY	color565.h	28;"	d
-COLOR565_DARK_GREEN	color565.h	29;"	d
-COLOR565_DARK_KHAKI	color565.h	30;"	d
-COLOR565_DARK_MAGENTA	color565.h	31;"	d
-COLOR565_DARK_OLIVE_GREEN	color565.h	32;"	d
-COLOR565_DARK_ORANGE	color565.h	33;"	d
-COLOR565_DARK_ORCHID	color565.h	34;"	d
-COLOR565_DARK_RED	color565.h	35;"	d
-COLOR565_DARK_SALMON	color565.h	36;"	d
-COLOR565_DARK_SEA_GREEN	color565.h	37;"	d
-COLOR565_DARK_SLATE_BLUE	color565.h	38;"	d
-COLOR565_DARK_SLATE_GRAY	color565.h	39;"	d
-COLOR565_DARK_TURQUOISE	color565.h	40;"	d
-COLOR565_DARK_VIOLET	color565.h	41;"	d
-COLOR565_DEEP_PINK	color565.h	42;"	d
-COLOR565_DEEP_SKY_BLUE	color565.h	43;"	d
-COLOR565_DIM_GRAY	color565.h	44;"	d
-COLOR565_DODGER_BLUE	color565.h	45;"	d
-COLOR565_FIRE_BRICK	color565.h	46;"	d
-COLOR565_FLORAL_WHITE	color565.h	47;"	d
-COLOR565_FOREST_GREEN	color565.h	48;"	d
-COLOR565_FUCHSIA	color565.h	49;"	d
-COLOR565_GAINSBORO	color565.h	50;"	d
-COLOR565_GHOST_WHITE	color565.h	51;"	d
-COLOR565_GOLD	color565.h	52;"	d
-COLOR565_GOLDEN_ROD	color565.h	53;"	d
-COLOR565_GRAY	color565.h	54;"	d
-COLOR565_GREEN	color565.h	55;"	d
-COLOR565_GREEN_YELLOW	color565.h	56;"	d
-COLOR565_HONEY_DEW	color565.h	57;"	d
-COLOR565_HOT_PINK	color565.h	58;"	d
-COLOR565_INDIAN_RED	color565.h	59;"	d
-COLOR565_INDIGO	color565.h	60;"	d
-COLOR565_IVORY	color565.h	61;"	d
-COLOR565_KHAKI	color565.h	62;"	d
-COLOR565_LAVENDER	color565.h	63;"	d
-COLOR565_LAVENDER_BLUSH	color565.h	64;"	d
-COLOR565_LAWN_GREEN	color565.h	65;"	d
-COLOR565_LEMON_CHIFFON	color565.h	66;"	d
-COLOR565_LIGHT_BLUE	color565.h	67;"	d
-COLOR565_LIGHT_CORAL	color565.h	68;"	d
-COLOR565_LIGHT_CYAN	color565.h	69;"	d
-COLOR565_LIGHT_GOLDEN_ROD_YELLOW	color565.h	70;"	d
-COLOR565_LIGHT_GRAY	color565.h	71;"	d
-COLOR565_LIGHT_GREEN	color565.h	72;"	d
-COLOR565_LIGHT_PINK	color565.h	73;"	d
-COLOR565_LIGHT_SALMON	color565.h	74;"	d
-COLOR565_LIGHT_SEA_GREEN	color565.h	75;"	d
-COLOR565_LIGHT_SKY_BLUE	color565.h	76;"	d
-COLOR565_LIGHT_SLATE_GRAY	color565.h	77;"	d
-COLOR565_LIGHT_STEEL_BLUE	color565.h	78;"	d
-COLOR565_LIGHT_YELLOW	color565.h	79;"	d
-COLOR565_LIME	color565.h	80;"	d
-COLOR565_LIME_GREEN	color565.h	81;"	d
-COLOR565_LINEN	color565.h	82;"	d
-COLOR565_MAGENTA	color565.h	83;"	d
-COLOR565_MAROON	color565.h	84;"	d
-COLOR565_MEDIUM_AQUA_MARINE	color565.h	85;"	d
-COLOR565_MEDIUM_BLUE	color565.h	86;"	d
-COLOR565_MEDIUM_ORCHID	color565.h	87;"	d
-COLOR565_MEDIUM_PURPLE	color565.h	88;"	d
-COLOR565_MEDIUM_SEA_GREEN	color565.h	89;"	d
-COLOR565_MEDIUM_SLATE_BLUE	color565.h	90;"	d
-COLOR565_MEDIUM_SPRING_GREEN	color565.h	91;"	d
-COLOR565_MEDIUM_TURQUOISE	color565.h	92;"	d
-COLOR565_MEDIUM_VIOLET_RED	color565.h	93;"	d
-COLOR565_MIDNIGHT_BLUE	color565.h	94;"	d
-COLOR565_MINT_CREAM	color565.h	95;"	d
-COLOR565_MISTY_ROSE	color565.h	96;"	d
-COLOR565_MOCCASIN	color565.h	97;"	d
-COLOR565_NAVAJO_WHITE	color565.h	98;"	d
-COLOR565_NAVY	color565.h	99;"	d
-COLOR565_OLD_LACE	color565.h	100;"	d
-COLOR565_OLIVE	color565.h	101;"	d
-COLOR565_OLIVE_DRAB	color565.h	102;"	d
-COLOR565_ORANGE	color565.h	103;"	d
-COLOR565_ORANGE_RED	color565.h	104;"	d
-COLOR565_ORCHID	color565.h	105;"	d
-COLOR565_PALE_GOLDEN_ROD	color565.h	106;"	d
-COLOR565_PALE_GREEN	color565.h	107;"	d
-COLOR565_PALE_TURQUOISE	color565.h	108;"	d
-COLOR565_PALE_VIOLET_RED	color565.h	109;"	d
-COLOR565_PAPAYA_WHIP	color565.h	110;"	d
-COLOR565_PEACH_PUFF	color565.h	111;"	d
-COLOR565_PERU	color565.h	112;"	d
-COLOR565_PINK	color565.h	113;"	d
-COLOR565_PLUM	color565.h	114;"	d
-COLOR565_POWDER_BLUE	color565.h	115;"	d
-COLOR565_PURPLE	color565.h	116;"	d
-COLOR565_RED	color565.h	117;"	d
-COLOR565_ROSY_BROWN	color565.h	118;"	d
-COLOR565_ROYAL_BLUE	color565.h	119;"	d
-COLOR565_SADDLE_BROWN	color565.h	120;"	d
-COLOR565_SALMON	color565.h	121;"	d
-COLOR565_SANDY_BROWN	color565.h	122;"	d
-COLOR565_SEA_GREEN	color565.h	123;"	d
-COLOR565_SEA_SHELL	color565.h	124;"	d
-COLOR565_SIENNA	color565.h	125;"	d
-COLOR565_SILVER	color565.h	126;"	d
-COLOR565_SKY_BLUE	color565.h	127;"	d
-COLOR565_SLATE_BLUE	color565.h	128;"	d
-COLOR565_SLATE_GRAY	color565.h	129;"	d
-COLOR565_SNOW	color565.h	130;"	d
-COLOR565_SPRING_GREEN	color565.h	131;"	d
-COLOR565_STEEL_BLUE	color565.h	132;"	d
-COLOR565_TAN	color565.h	133;"	d
-COLOR565_TEAL	color565.h	134;"	d
-COLOR565_THISTLE	color565.h	135;"	d
-COLOR565_TOMATO	color565.h	136;"	d
-COLOR565_TURQUOISE	color565.h	137;"	d
-COLOR565_VIOLET	color565.h	138;"	d
-COLOR565_WHEAT	color565.h	139;"	d
-COLOR565_WHITE	color565.h	140;"	d
-COLOR565_WHITE_SMOKE	color565.h	141;"	d
-COLOR565_YELLOW	color565.h	142;"	d
-COLOR565_YELLOW_GREEN	color565.h	143;"	d
-CS_H	st7735.h	21;"	d
-CS_L	st7735.h	20;"	d
-CS_PIN	st7735.h	11;"	d
-Delay_US	st7735.h	32;"	d
-Font5x7	font5x7.h	/^static unsigned char const Font5x7[] =$/;"	v
-Font7x11	font7x11.h	/^static unsigned char const Font7x11[] ={$/;"	v
+A0_H	st7735.h	22;"	d
+A0_L	st7735.h	21;"	d
+A0_PIN	st7735.h	9;"	d
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-c -std=c99 -O3 -I .\/$/;"	m
+CS_H	st7735.h	18;"	d
+CS_L	st7735.h	17;"	d
+CS_PIN	st7735.h	8;"	d
+Delay_US	st7735.h	29;"	d
 GPIO_BASE	gpio.h	1;"	d
 GPIO_GPAFEN0	gpio.h	39;"	d
 GPIO_GPAFEN1	gpio.h	40;"	d
@@ -183,51 +43,44 @@ GPIO_GPREN0	gpio.h	24;"	d
 GPIO_GPREN1	gpio.h	25;"	d
 GPIO_GPSET0	gpio.h	12;"	d
 GPIO_GPSET1	gpio.h	13;"	d
+HEADERS	Makefile	/^HEADERS = $(wildcard *.h)$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+OBJECTS	Makefile	/^OBJECTS=$(patsubst %.c, %.o, $(wildcard *.c))$/;"	m
 RGB565	st7735.c	/^uint16_t RGB565(uint8_t R, uint8_t G, uint8_t B)$/;"	f
-RST_H	st7735.h	29;"	d
-RST_L	st7735.h	28;"	d
-RST_PIN	st7735.h	13;"	d
+RST_H	st7735.h	26;"	d
+RST_L	st7735.h	25;"	d
+RST_PIN	st7735.h	10;"	d
+SOURCES	Makefile	/^SOURCES=main.c st7735.c gpio.c spi.c$/;"	m
 ST7735_AddrSet	st7735.c	/^void ST7735_AddrSet(uint16_t XS, uint16_t YS, uint16_t XE, uint16_t YE)$/;"	f
 ST7735_Clear	st7735.c	/^void ST7735_Clear(uint16_t color)$/;"	f
-ST7735_FillRect	st7735.c	/^void ST7735_FillRect(uint16_t X1, uint16_t Y1, uint16_t X2, uint16_t Y2,$/;"	f
-ST7735_HLine	st7735.c	/^void ST7735_HLine(uint16_t X1, uint16_t X2, uint16_t Y, uint16_t color)$/;"	f
 ST7735_Init	st7735.c	/^void ST7735_Init(void)$/;"	f
-ST7735_Line	st7735.c	/^void ST7735_Line(int16_t X1, int16_t Y1, int16_t X2, int16_t Y2, uint16_t color)$/;"	f
 ST7735_Orientation	st7735.c	/^void ST7735_Orientation(uint8_t orientation)$/;"	f
-ST7735_Pixel	st7735.c	/^void ST7735_Pixel(uint16_t X, uint16_t Y, uint16_t color)$/;"	f
-ST7735_PutChar5x7	st7735.c	/^void ST7735_PutChar5x7(uint8_t scale, uint16_t X, uint16_t Y, uint8_t chr,$/;"	f
-ST7735_PutChar7x11	st7735.c	/^void ST7735_PutChar7x11(uint16_t X, uint16_t Y, uint8_t chr, uint16_t color,$/;"	f
-ST7735_PutStr5x7	st7735.c	/^void ST7735_PutStr5x7(uint8_t scale, uint8_t X, uint8_t Y, char *str,$/;"	f
-ST7735_PutStr7x11	st7735.c	/^void ST7735_PutStr7x11(uint8_t X, uint8_t Y, char *str, uint16_t color,$/;"	f
-ST7735_Rect	st7735.c	/^void ST7735_Rect(uint16_t X1, uint16_t Y1, uint16_t X2, uint16_t Y2,$/;"	f
-ST7735_VLine	st7735.c	/^void ST7735_VLine(uint16_t X, uint16_t Y1, uint16_t Y2, uint16_t color)$/;"	f
 ST7735_cmd	st7735.c	/^void ST7735_cmd(uint8_t cmd)$/;"	f
 ST7735_data	st7735.c	/^void ST7735_data(uint8_t data)$/;"	f
 ST7735_write	st7735.c	/^void ST7735_write(uint8_t data)$/;"	f
 ScrOrientation_TypeDef	st7735.h	/^} ScrOrientation_TypeDef;$/;"	t	typeref:enum:__anon1
-__COLOR565_H__	color565.h	2;"	d
+TARGET	Makefile	/^TARGET=lcd$/;"	m
 __ST7735_H__	st7735.h	2;"	d
 gpio	gpio.c	/^volatile unsigned int *gpio = MAP_FAILED;$/;"	v
 gpio_clear_pin	gpio.c	/^void gpio_clear_pin(int pin)$/;"	f
 gpio_init	gpio.c	/^void gpio_init(void)$/;"	f
 gpio_mode_output	gpio.c	/^void gpio_mode_output(int pin)$/;"	f
 gpio_set_pin	gpio.c	/^void gpio_set_pin(int pin)$/;"	f
-main	m.c	/^int main()$/;"	f
 main	main.c	/^int main()$/;"	f
-main	main_backup.c	/^int main()$/;"	f
 scr_180	st7735.h	/^  scr_180 = 3$/;"	e	enum:__anon1
 scr_CCW	st7735.h	/^  scr_CCW = 2,$/;"	e	enum:__anon1
 scr_CW	st7735.h	/^  scr_CW = 1,$/;"	e	enum:__anon1
-scr_h	st7735.h	17;"	d
+scr_h	st7735.h	14;"	d
 scr_height	st7735.c	/^uint16_t scr_height;$/;"	v
 scr_normal	st7735.h	/^  scr_normal = 0,$/;"	e	enum:__anon1
-scr_w	st7735.h	16;"	d
+scr_w	st7735.h	13;"	d
 scr_width	st7735.c	/^uint16_t scr_width;$/;"	v
-spiBPW	spi.c	/^static const uint8_t     spiBPW   = 8 ;$/;"	v	file:
-spiDelay	spi.c	/^static const uint16_t    spiDelay = 0 ;$/;"	v	file:
-spiDev0	spi.c	/^static const char       *spiDev0  = "\/dev\/spidev0.0" ;$/;"	v	file:
-spiDev1	spi.c	/^static const char       *spiDev1  = "\/dev\/spidev0.1" ;$/;"	v	file:
-spiFd	spi.c	/^static int         spiFd;$/;"	v	file:
-spiSpeed	spi.c	/^static uint32_t    spiSpeed ;$/;"	v	file:
-spi_init	spi.c	/^int spi_init (int channel, int speed, int mode)$/;"	f
-spi_write	spi.c	/^int spi_write (int channel, unsigned char *data, int len)$/;"	f
+spiBPW	spi.c	/^static const uint8_t spiBPW = 8;$/;"	v	file:
+spiDelay	spi.c	/^static const uint16_t spiDelay = 0;$/;"	v	file:
+spiDev0	spi.c	/^static const char *spiDev0 = "\/dev\/spidev0.0";$/;"	v	file:
+spiDev1	spi.c	/^static const char *spiDev1 = "\/dev\/spidev0.1";$/;"	v	file:
+spiFd	spi.c	/^static int spiFd;$/;"	v	file:
+spiSpeed	spi.c	/^static uint32_t spiSpeed;$/;"	v	file:
+spi_init	spi.c	/^int spi_init(int channel, int speed, int mode)$/;"	f
+spi_write	spi.c	/^int spi_write(int channel, unsigned char *data, int len)$/;"	f
+spi_write_16	spi.c	/^int spi_write_16(int channel, unsigned char *data, int len)$/;"	f

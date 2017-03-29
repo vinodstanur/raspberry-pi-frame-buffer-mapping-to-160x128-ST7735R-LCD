@@ -5,9 +5,9 @@
 #include <time.h>
 #include "spi.h"
 
-#define CS_PIN	8
-#define A0_PIN	17 
-#define RST_PIN	4
+#define CS_PIN	8UL
+#define A0_PIN  24UL
+#define RST_PIN	23UL
 
 // Screen resolution in normal orientation
 #define scr_w         160
