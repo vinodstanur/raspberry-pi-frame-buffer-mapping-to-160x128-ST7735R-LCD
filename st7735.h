@@ -7,7 +7,7 @@
 
 #define CS_PIN	8UL
 #define A0_PIN  24UL
-#define RST_PIN	23UL
+#define RST_PIN	25UL
 
 // Screen resolution in normal orientation
 #define scr_w         160

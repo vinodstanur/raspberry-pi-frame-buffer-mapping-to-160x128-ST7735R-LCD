@@ -14,12 +14,6 @@
 #include "gpio.h"
 #include <endian.h>
 
-
-//#define debug
-
-
-uint16_t fb2[128 * 160];
-
 int main()
 {
 	int fbfd = 0;
@@ -27,82 +21,89 @@ int main()
 	struct fb_var_screeninfo vinfo;
 	long int screensize = 0;
 	uint8_t *fbp = 0;
-	int i;
-	uint16_t *p = fb2;
-	int xx = 0;
-	int yy = 0;
+	int x = 0, y = 0;
+	long int location = 0;
 
 	fbfd = open("/dev/fb0", O_RDWR);
+
+	int i;
 
 	ST7735_Init();
 
 	ST7735_Orientation(1);
 
-	memset(fb2, 0, sizeof(fb2));
-
-	//clear frame buffer
 	CS_L();
-	ST7735_AddrSet(0, 0, 160, 128);
+
+	ST7735_AddrSet(0, 0, 160, 120);
+
 	A0_H();
-	for (i = 0; i < 10; i++) {
-			spi_write(0, (char *)p, 4096);
-			p += 4096 / 2;
-	}
 
+	uint16_t fb2[120 * 160];
 
-	while (1) {
-		usleep(50000);
-		
-		ioctl(fbfd, FBIOGET_VSCREENINFO, &vinfo);
-#ifdef debug
-		printf("X = %d, Y = %d\n", vinfo.xres, vinfo.yres);
-#endif
+	int xx = 0;
+	int yy = 0;
 		CS_L();
 
-		ST7735_AddrSet(0, 4, 160, 124);
+		ST7735_AddrSet(0, 0, 160, 120);
+
+		A0_H();
+
+	while (1) {
+	  usleep(50000);
+	ioctl(fbfd, FBIOGET_VSCREENINFO, &vinfo);
+		printf("X = %d, Y = %d\n", vinfo.xres, vinfo.yres);
+	
+
+		CS_L();
+
+		ST7735_AddrSet(0, 0, 160, 120);
 
 		A0_H();
 
 		int xoffset = vinfo.xres / 160;
-		int yoffset = vinfo.xres * (vinfo.yres / 120 - 1);
-#ifdef debug
-		printf("xoffset = %d, yoffset = %d\n", xoffset, yoffset);
-#endif
-
-		screensize = vinfo.xres * vinfo.yres * vinfo.bits_per_pixel / 8;
-#ifdef debug
+		int yoffset = vinfo.xres * (vinfo.yres / 120  - 1) ;
+	
+	  //usleep(50000);
+	 	screensize = vinfo.xres * vinfo.yres * vinfo.bits_per_pixel / 8;
 		printf("screensize = %d\n", screensize);
-#endif
 		const int PADDING = 4096;
 		int mmapsize = (screensize + PADDING - 1) & ~(PADDING - 1);
-#ifdef debug
 		printf("mapsize = %d\n", mmapsize);
-#endif
-		fbp = (char *)mmap(0, mmapsize, PROT_READ | PROT_WRITE, MAP_SHARED, fbfd, 0);
+		fbp = (char *)mmap(0, mmapsize, PROT_READ | PROT_WRITE, MAP_SHARED, fbfd,0);
+	  if(fbp == NULL) {
+						printf("null pointer return\n");
+						exit(3);
+		}
+		printf("xoffset = %d, yoffset = %d\n", xoffset, yoffset);
 
 		uint16_t *p = fb2;
-		uint16_t *x = (uint16_t *) fbp;
+		uint16_t *x = (uint16_t *)fbp;
 		for (xx = 0; xx < 120; xx++) {
-			for (yy = 0; yy < 160; yy++) {
-				*p++ = htons(*x);
-				x += xoffset;
-			}
-			x += yoffset;
+						for(yy = 0; yy < 160; yy++) {
+										*p++ = htons(*x);
+										x += xoffset;
+						}
+						x += yoffset;
 		}
 		munmap(fbp, screensize);
-		
+	  printf("unmap success\n");
 		p = fb2;
+
 
 		for (i = 0; i < 9; i++) {
 			spi_write(0, (char *)p, 4096);
-			p += 4096 / 2;
+			p += 4096/2;
 		}
 
-		spi_write(0, (char *)p, 120 * 160 * 2 - 4096 * 9);
+			spi_write(0, (char *)p, 120*160*2 - 4096*9);
+		
+		//      spi_write(0, p, 120*160*2 - 4096*9);
+
 	}
 
 	CS_H();
 	printf("done\n");
+
 
 	close(fbfd);
 

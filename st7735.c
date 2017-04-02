@@ -38,7 +38,7 @@ void ST7735_Init(void)
 	printf("ST7735_Init...\n");
 	//wiringPiSetup ();
 	gpio_init();
-	spi_init(0, 10000000, 0);
+	spi_init(0, 30000000, 0);
 
 	gpio_mode_output(CS_PIN);
 	gpio_mode_output(A0_PIN);
@@ -122,9 +122,9 @@ void ST7735_Init(void)
 	ST7735_cmd(0x13);	// Partial mode off
 
 	ST7735_cmd(0x26);	// Gamma curve set:
-	ST7735_data(0x01);	// Gamma curve 1 (G2.2) or (G1.0)
+	//ST7735_data(0x01);	// Gamma curve 1 (G2.2) or (G1.0)
 	//ST7735_data(0x02);    // Gamma curve 2 (G1.8) or (G2.5)
-	//ST7735_data(0x04);    // Gamma curve 3 (G2.5) or (G2.2)
+	ST7735_data(0x04);    // Gamma curve 3 (G2.5) or (G2.2)
 	//ST7735_data(0x08);    // Gamma curve 4 (G1.0) or (G1.8)
 
 	ST7735_cmd(0x38);	// Display on

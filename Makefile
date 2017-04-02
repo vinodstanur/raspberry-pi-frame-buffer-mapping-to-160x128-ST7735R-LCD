@@ -29,7 +29,7 @@ clean:
 
 run:
 	sudo ./lcd &
-	sudo fbset -xres 160 -yres 128 -vxres 160 -vyres 128 -depth 16
+	sudo fbset -xres 160 -yres 120 -vxres 160 -vyres 120 -depth 16
 	sudo pkill lcd
 	sudo ./lcd &
 
